@@ -8,41 +8,31 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "About Me",
-      home: page(),
-    );
-    throw UnimplementedError();
-  }
+      debugShowCheckedModeBanner: false,
+      title: "About Page",
+      home: Column(
+        children: [
+          Text("Name:",
+          style: TextStyle(
+              fontSize: 14,
+              color: Colors.lightGreen,), textAlign: TextAlign.left,),
+          Text("de Developer, Syab Ahmad",
+            style: TextStyle(fontSize: 20, color: Colors.green),),
+          Text("Email Address:",
+            style: TextStyle(fontSize: 14, color: Colors.lightGreen), ),
+          Text("syedsyabahmadshah@gmail.com",
+            style: TextStyle(fontSize: 20, color: Colors.green), ),
+          Text("Skills",
+            style: TextStyle(fontSize: 14, color: Colors.lightGreen), ),
+          Text("Flutter*, java for android and desktop development, python* and many more languages",
+            style: TextStyle(fontSize: 20, color: Colors.green), ),
 
-}
+        ],
 
-class page extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("Syab Ahmad de Developer"),
-        ),
-        backgroundColor: Colors.green,
       ),
+
     );
     throw UnimplementedError();
   }
 
 }
-
-
-// void main() {
-//   runApp(MaterialApp(
-//     title: "hey",
-//     home: Scaffold(
-//       appBar: AppBar(
-//         title: Text("on my own"),
-//       ),
-//       body: Center(
-//         child: Text("Again"),
-//       ),
-//     ),
-//   ));
-// }
